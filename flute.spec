@@ -21,8 +21,8 @@ Requires:	sac
 A Cascading Style Sheets parser using the Simple API for CSS BuildRequires:	for Java.
 
 %package javadoc
-Group:		Documentation
 Summary:	Javadoc for %{name}
+Group:		Development/Java
 
 %description javadoc
 Javadoc for %{name}.
