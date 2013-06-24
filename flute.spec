@@ -18,7 +18,7 @@ Requires:	jpackage-utils
 Requires:	sac
 
 %description
-A Cascading Style Sheets parser using the Simple API for CSS BuildRequires:	for Java.
+A Cascading Style Sheets parser using the Simple API for CSS for Java.
 
 %package javadoc
 Summary:	Javadoc for %{name}
