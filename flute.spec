@@ -1,7 +1,7 @@
 Summary:	Java CSS parser using SAC
 Name:		flute
 Version:	1.3.0
-Release:	4
+Release:	5
 # The entire source code is W3C except ParseException.java which is LGPLv2+
 License:	W3C and LGPLv2+
 Group:		System/Libraries
