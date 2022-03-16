@@ -8,9 +8,9 @@ License: W3C and LGPLv2+
 
 Source0: http://downloads.sourceforge.net/jfreereport/%{name}-%{version}-OOo31.zip
 URL: http://www.w3.org/Style/CSS/SAC/
-BuildRequires: ant, java-devel, jpackage-utils, sac
+BuildRequires: ant, java-devel, javapackages-utils, sac
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
-Requires: java, jpackage-utils sac
+Requires: java, javapackages-utils sac
 BuildArch: noarch
 
 %description
