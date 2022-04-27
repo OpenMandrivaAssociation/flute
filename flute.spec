@@ -1,13 +1,16 @@
 Name: flute
 Version: 1.3.0
-Release: 12.OOo31.0
+Release: 13.OOo31.0
 Summary: Java CSS parser using SAC
 # The entire source code is W3C except ParseException.java which is LGPLv2+
 License: W3C and LGPLv2+
 
 Source0: http://downloads.sourceforge.net/jfreereport/%{name}-%{version}-OOo31.zip
 URL: http://www.w3.org/Style/CSS/SAC/
-BuildRequires: jdk-current ant sac
+# We need to build with OpenJDK 12 because this
+# is used by LibreOffice, which can't build with
+# newer versions because of hsqldb 1.8.x
+BuildRequires: java-12-openjdk-devel ant sac
 Requires: java sac
 BuildArch: noarch
 
@@ -28,6 +31,8 @@ mkdir lib
 ln -s %{_datadir}/java/sac.jar lib
 
 %build
+export JAVA_HOME=%{_prefix}/lib/jvm/java-12-openjdk
+export PATH=${JAVA_HOME}/bin:${PATH}
 ant jar javadoc
 
 %install
