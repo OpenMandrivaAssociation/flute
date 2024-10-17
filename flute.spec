@@ -6,7 +6,7 @@ Summary: Java CSS parser using SAC
 License: W3C and LGPLv2+
 
 Source0: http://downloads.sourceforge.net/jfreereport/%{name}-%{version}-OOo31.zip
-URL: http://www.w3.org/Style/CSS/SAC/
+URL: https://www.w3.org/Style/CSS/SAC/
 # We need to build with OpenJDK 12 because this
 # is used by LibreOffice, which can't build with
 # newer versions because of hsqldb 1.8.x
